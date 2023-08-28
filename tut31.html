@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /*div p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+
+        /* if p is container by any li which is contained by div*/
+
+        /*div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+
+        /*if p is right inside div then this css will be applied*/
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+
+        /* if p is right after div i.e p is the next sibling of div */
+        /*div + p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }*/
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li>This is a pragraph</li>
+        </ul>
+        <p>This is pragraph</p>
+    </div>
+    <div class="container">
+        <p>This is another pragraph</p>
+    </div>
+    <p>This is outermost pragraph</p>
+
+
+
+
+
+</body>
+
+</html>
