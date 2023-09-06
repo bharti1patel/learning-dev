@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media quaries</title>
     <style>
-        .box{
-            text-align: center;
-            font-size: 35px;
+        .box {
             background-color: red;
-            color: white;
+            color: wheat;
+            font-size: 80px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:500px) {
+            #box-1 {
+                display: block;
+                background-color: aquamarine;
+            }
+        }
+
+        @media (max-width:600px) and (min-width: 500px) {
+            #box-2 {
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        @media (max-width:700px) and (min-width: 600px) {
+            #box-3 {
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (max-width:800px) and (min-width: 700px) {
+            #box-4 {
+                display: block;
+                background-color: blueviolet;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="box" id="box1">Mai ak iphone hoon</div>
-    <div class="box" id="box2">Mai ak tablet hoon</div>
-    <div class="box" id="box3">Mai ak computer hoon</div>
-    <div class="box" id="box4">Mai ak widescreen computer hoon</div>
-
-
+    <div class="box" id="box-1">mai ek iphone hoon</div>
+    <div class="box" id="box-2">mai ek Tablet hoon</div>
+    <div class="box" id="box-3">mai ek computer hoon</div>
+    <div class="box" id="box-4">mai ek widescreen hoon</div>
 </body>
+
 </html>
